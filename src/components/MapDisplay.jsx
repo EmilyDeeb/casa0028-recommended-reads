@@ -12,10 +12,10 @@ function MapDisplay(props) {
        type: 'circle',
        source: 'plaques-data',
        paint: {
-           'circle-radius': 8,
-           'circle-color': '#5baf65ff',
-           'circle-stroke-width': 2,
-           'circle-stroke-color': '#e36868ff'
+           'circle-radius': 6,
+           'circle-color': 'rgb(255, 196, 223)',
+           'circle-stroke-width': 1.8,
+           'circle-stroke-color': 'rgb(255, 0, 85)'
        },
    }
 
@@ -41,7 +41,7 @@ function MapDisplay(props) {
       }}
       style={{width: '100%', height: '100vh'}}
       className="w-full h-full"
-      mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+      mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
       onClick={handleMapClick}
       interactiveLayerIds={['plaques-layer']}
     >
