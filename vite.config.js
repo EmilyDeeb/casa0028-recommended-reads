@@ -13,4 +13,10 @@ export default defineConfig({
     tailwindcss(),
   ],
   base: '/casa0028-recommended-reads/'
+  server: {
+    watch: {
+      usePolling: true,
+      interval: 100,
+    },
+  },
 })
