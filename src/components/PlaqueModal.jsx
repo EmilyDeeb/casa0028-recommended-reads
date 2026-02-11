@@ -14,7 +14,7 @@ function PlaqueModal(props) {
         
 
         try {
-            const response = await fetch(`http://openlibrary.org/search.json?author=${author}&limit=5`);
+            const response = await fetch(`https://openlibrary.org/search.json?author=${author}&limit=5`);
             const data = await response.json();
             console.log("Fetched books data:", data);
             setBooks(data.docs);
